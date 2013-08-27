@@ -2,6 +2,8 @@ include(LibAVFindComponent)
 
 libav_find_component("Util")
 
+list(APPEND AVUtil_DEFINITIONS "-D__STDC_CONSTANT_MACROS")
+
 # Handle arguments
 include(FindPackageHandleStandardArgs)
 find_package_handle_standard_args(AVUtil
